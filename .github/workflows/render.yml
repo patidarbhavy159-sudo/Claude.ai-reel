@@ -32,3 +32,8 @@ jobs:
           fi
           # Add your render execution script or commands here
           echo "Rendering process completed!"
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-video
+          path: project/*.mp4
